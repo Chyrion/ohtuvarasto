@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Add pytest manually
-        run: poetry add pytest
+        run: poetry add pytest==7.4.2
       - name: Run tests
         run: poetry run coverage run --branch -m pytest     
       - name: Coverage report
